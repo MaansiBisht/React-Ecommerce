@@ -31,7 +31,7 @@ export const signout = next => {
     localStorage.removeItem("jwt");
     next();
 
-    return fetch(`${API}/signout`, {
+    return fetch(`${API}/signout`, {  // not available
       method: "GET"
     })
       .then(response => console.log("signout success"))
